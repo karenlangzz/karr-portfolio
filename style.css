@@ -1,0 +1,541 @@
+```css
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f3ed;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #111;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #f47b20;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f47b20;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title,
+.section-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #f47b20;
+    font-weight: 500;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 8vw, 90px);
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #f47b20;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero p:not(.small-title) {
+    max-width: 600px;
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #f47b20;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #f47b20;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn.outline {
+    background: transparent;
+    color: #f47b20;
+}
+
+.btn.outline:hover {
+    background: #f47b20;
+    color: white;
+}
+
+.basketball {
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+    background: #f47b20;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 120px;
+
+    box-shadow: 15px 15px 0 #222;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.section > h2 {
+    font-size: 42px;
+    margin: 10px 0 50px;
+}
+
+.section.dark {
+    background: #171717;
+    color: white;
+}
+
+
+/* About */
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Skills */
+
+.skills-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #f47b20;
+    border-radius: 20px;
+}
+
+.progress.html {
+    width: 90%;
+}
+
+.progress.css {
+    width: 80%;
+}
+
+.progress.cpp {
+    width: 70%;
+}
+
+.progress.web {
+    width: 75%;
+}
+
+.soft-skills {
+    max-width: 800px;
+    margin: 40px auto 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.soft-skills span {
+    padding: 10px 18px;
+    border: 1px solid #555;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+
+/* Projects */
+
+.projects-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    padding: 35px 25px;
+    background: white;
+    border-radius: 10px;
+
+    text-align: left;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #f47b20;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Hobbies */
+
+.hobbies-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.hobby {
+    padding: 30px 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.hobby:hover {
+    transform: translateY(-5px);
+    border-color: #f47b20;
+}
+
+.hobby > div {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+/* Goal */
+
+.goal {
+    background: #f47b20;
+    color: white;
+
+    padding: 80px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+}
+
+.goal .section-title {
+    color: white;
+}
+
+.goal h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.goal > div:first-child {
+    max-width: 650px;
+}
+
+.goal-ball {
+    font-size: 100px;
+}
+
+
+/* Contact */
+
+.contact {
+    background: #f7f3ed;
+}
+
+.contact > p:not(.section-title) {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info p {
+    font-weight: 500;
+}
+
+.contact-info a {
+    color: #f47b20;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+    background: #111;
+    color: white;
+
+    padding: 30px;
+    text-align: center;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero-text {
+        max-width: 700px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .about-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .hobbies-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+
+    .goal {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .basketball {
+        width: 180px;
+        height: 180px;
+        font-size: 85px;
+        box-shadow: 10px 10px 0 #222;
+    }
+
+    .section {
+        padding: 70px 20px;
+    }
+
+    .section > h2 {
+        font-size: 32px;
+    }
+
+    .hobbies-container {
+        grid-template-columns: 1fr;
+    }
+
+    .goal {
+        padding: 60px 20px;
+    }
+
+    .goal h2 {
+        font-size: 30px;
+    }
+
+    .goal-ball {
+        font-size: 80px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+```
