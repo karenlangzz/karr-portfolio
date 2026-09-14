@@ -1,4 +1,4 @@
-```css
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap');
 
 * {
@@ -31,7 +31,6 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 18px 30px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +64,6 @@ header {
     color: #f47b20;
 }
 
-
 /* Hero */
 
 .hero {
@@ -73,7 +71,6 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 80px 30px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -148,19 +145,14 @@ header {
 .basketball {
     width: 250px;
     height: 250px;
-
     border-radius: 50%;
     background: #f47b20;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 120px;
-
     box-shadow: 15px 15px 0 #222;
 }
-
 
 /* Sections */
 
@@ -179,13 +171,11 @@ header {
     color: white;
 }
 
-
 /* About */
 
 .about-container {
     max-width: 1100px;
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -195,9 +185,7 @@ header {
     background: white;
     padding: 35px 25px;
     border-radius: 10px;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
     transition: 0.3s;
 }
 
@@ -213,7 +201,6 @@ header {
 .about-card h3 {
     margin-bottom: 10px;
 }
-
 
 /* Skills */
 
@@ -266,7 +253,6 @@ header {
 .soft-skills {
     max-width: 800px;
     margin: 40px auto 0;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -280,13 +266,11 @@ header {
     font-size: 14px;
 }
 
-
 /* Projects */
 
 .projects-container {
     max-width: 1100px;
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -296,11 +280,8 @@ header {
     padding: 35px 25px;
     background: white;
     border-radius: 10px;
-
     text-align: left;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
     transition: 0.3s;
 }
 
@@ -328,13 +309,11 @@ header {
     font-weight: 600;
 }
 
-
 /* Hobbies */
 
 .hobbies-container {
     max-width: 1000px;
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -344,7 +323,6 @@ header {
     padding: 30px 20px;
     border: 1px solid #444;
     border-radius: 10px;
-
     transition: 0.3s;
 }
 
@@ -358,19 +336,15 @@ header {
     margin-bottom: 10px;
 }
 
-
 /* Goal */
 
 .goal {
     background: #f47b20;
     color: white;
-
     padding: 80px 30px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 100px;
 }
 
@@ -390,7 +364,6 @@ header {
 .goal-ball {
     font-size: 100px;
 }
-
 
 /* Contact */
 
@@ -418,16 +391,13 @@ header {
     text-decoration: none;
 }
 
-
 /* Footer */
 
 footer {
     background: #111;
     color: white;
-
     padding: 30px;
     text-align: center;
-
     font-size: 14px;
 }
 
@@ -435,11 +405,9 @@ footer p {
     margin: 5px;
 }
 
-
 /* Responsive Design */
 
 @media (max-width: 900px) {
-
     .nav-links {
         gap: 15px;
     }
@@ -476,9 +444,7 @@ footer p {
     }
 }
 
-
 @media (max-width: 600px) {
-
     .navbar {
         padding: 15px 20px;
     }
@@ -538,4 +504,3 @@ footer p {
         width: 100%;
     }
 }
-```
